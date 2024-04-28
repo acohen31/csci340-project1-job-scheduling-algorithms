@@ -1,7 +1,7 @@
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.PriorityQueue;
+import java.util.Random;
 
 public class RoundRobin {
 
@@ -10,16 +10,19 @@ public class RoundRobin {
         LinkedList<JobObject> readyQueue = new LinkedList<>();
         jobQueue.sort(Comparator.comparingInt(JobObject::getArrTime));
         readyQueue.offerFirst(jobQueue.pollFirst());
-        int quantum = 2;
+        Random random = new Random();
+        int quantum = random.nextInt(3) + 1;
         final int throughputCutOff = 100;
         int currTime = readyQueue.peekFirst().getArrTime();
         int totalTurnAroundTime = 0;
         int jobCount = 1;
         int throughput = 0;
+        int contextSwitch = 1;
 
         while(!jobQueue.isEmpty() || !readyQueue.isEmpty()) {
             JobObject currJob = readyQueue.pollFirst();
             int remainingTime;
+            if (currTime != 0) currTime += contextSwitch;
             if (currJob != null) {
                remainingTime = currJob.getRemainingTime();
             } else {
@@ -53,6 +56,8 @@ public class RoundRobin {
         }
         float averageTurnAroundTime = (float) totalTurnAroundTime/jobs.size();
         System.out.printf("The average turn around time for RoundRobin is: %f\n", averageTurnAroundTime);
-        System.out.printf("The throughput for time=%d for RoundRobin is: %d", throughputCutOff, throughput);
+        System.out.printf("The throughput, number of jobs entered and completed, for time=%d for RoundRobin is: %d\n", throughputCutOff, throughput);
+        System.out.printf("quantum=%d, contextSwitch=%d", quantum, contextSwitch);
+
     }
 }

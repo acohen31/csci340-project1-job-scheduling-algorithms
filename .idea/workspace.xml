@@ -1,24 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="cs340-job-scheduling-algorithms:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3399a9c-79cb-4361-8f74-4d4ef34a150b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs340-job-scheduling-algorithms.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FIFO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JobGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JobObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Priority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RoundRobin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SJF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SRT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Simulator.java" afterDir="false" />
+    <list default="true" id="b3399a9c-79cb-4361-8f74-4d4ef34a150b" name="Changes" comment="Project finished">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RoundRobin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RoundRobin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +44,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/avivc/projects/node-authentication",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -63,6 +58,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\avivc\IdeaProjects\cs340-job-scheduling-algorithms\src" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Simulator">
     <configuration name="Simulator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Simulator" />
@@ -101,11 +101,37 @@
       <option name="presentableId" value="Default" />
       <updated>1713727287019</updated>
       <workItem from="1713727288021" duration="28173000" />
-      <workItem from="1713797293527" duration="18485000" />
+      <workItem from="1713797293527" duration="19490000" />
+      <workItem from="1714059776406" duration="1767000" />
+      <workItem from="1714332405326" duration="1508000" />
     </task>
+    <task id="LOCAL-00001" summary="Project finished">
+      <option name="closed" value="true" />
+      <created>1713817086531</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713817086531</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Project finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project finished" />
   </component>
 </project>
